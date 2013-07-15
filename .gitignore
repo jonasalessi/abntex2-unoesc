@@ -1,0 +1,10 @@
+*.aux
+*.gz
+*.log
+*.pdf
+*.idx
+*.dvi
+*.DS_Store
+*.lot
+*.toc
+*.ps

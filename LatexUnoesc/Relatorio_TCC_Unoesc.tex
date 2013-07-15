@@ -1,0 +1,99 @@
+%=======================================================================
+%
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com 
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos - Apresentacao
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% Autor:  Jonas Alessi(alessi.jonas@gmail.com
+% Versão: 10 de Junlho 2013.
+% Edição: TexMaker
+% LaTeX:  abnTeX2
+%
+%=======================================================================
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte	
+	oneside,          % não imprimir em verso e anverso, oposto do twoside 
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	brazil,				% o último idioma é o principal do documento
+	]{customizacao}
+
+
+\include{inicial}
+
+%----Include da capa é fora do documento 
+\include{partes/capa}
+%---
+
+\begin{document}
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+
+%--- CAPA ----
+\imprimircapa
+
+% --- FOLHA DE ROSTO
+\imprimirfolhaderosto
+% \imprimirfolhaderosto* (o * indica que haverá a ficha bibliográfica)
+
+% Inserir FOLHA DE APROVAÇÃO
+\include{partes/folhadeaprovacao}
+
+% DEDICATÓRIA
+\include{partes/dedicatoria}
+
+% AGRADECIMENTO
+\include{partes/agradecimentos}
+
+% RESUMO
+\include{partes/resumos}
+
+% Inserir LISTA DE TABELAS
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage  %-- força proxima pagina
+
+% Inserir o SUMARIO
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% INTRODUÇÃO
+\include{partes/introducao}
+
+%DESENVOLVIMENTO
+\include{partes/desenvolvimento}
+
+%CONCLUSÃO
+\include{partes/conclusao}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{partes/referencias}
+
+\end{document}
