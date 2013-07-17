@@ -12,7 +12,7 @@
 %% This work has the LPPL maintenance status `maintained'.
 %% 
 %% The Current Maintainer of this work is Jonas Alessi, alessi.jonas@gmail.com
-%%
+%% 
 %% Further information about abnTeX2 are available on http://abntex2.googlecode.com/
 %%
 
@@ -31,7 +31,6 @@
 %-------
 % informações do PDF
 %-------
-\makeatletter
 \hypersetup{
     pdftitle={\@title}, 
     pdfauthor={\@author},
@@ -45,7 +44,6 @@
     %urlcolor=blue,
     bookmarksdepth=4
 }
-\makeatother
 
 %-------
 % Capa
@@ -61,7 +59,7 @@
     {\ABNTEXchapterfont\large\imprimirautor}
 
     \vspace*{\fill}
-    {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+    {\ABNTEXchapterfont\Large\imprimirtitulo}
     \vspace*{\fill}
     
     {\large\imprimirlocal}
@@ -71,12 +69,10 @@
     \vspace*{1cm}
   \end{capa}
 }
-\makeatother
 
 %-----
 %Folha de rosto
 %-----
-\makeatletter
 \renewcommand{\imprimirfolhaderosto}{
    \begin{center}
 
@@ -84,26 +80,30 @@
 {\ABNTEXchapterfont\large\imprimirautor}
 
 \vspace*{\fill}\vspace*{\fill}
-{\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+{\ABNTEXchapterfont\Large\imprimirtitulo}
 \vspace*{\fill}
 
 \abntex@ifnotempty{\imprimirpreambulo}{%
 \hspace{.45\textwidth}
 \begin{minipage}{.5\textwidth}
-\SingleSpacing
-\imprimirpreambulo
+  \begin{SingleSpace}
+     \imprimirpreambulo
+  \end{SingleSpace}
 \end{minipage}%
 \vspace*{\fill}
 }%
 
 { 
-\begin{flushleft}
+\begin{flushleft} 
    \large\imprimirorientadorRotulo~\imprimirorientador\par
 \end{flushleft}
  }
-
 \abntex@ifnotempty{\imprimircoorientador}{%
-        {\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+    {
+    \begin{flushleft}
+      \large\imprimircoorientadorRotulo~\imprimircoorientador
+    \end{flushleft}
+    }%
 }%
 \vspace*{\fill}
 
@@ -114,18 +114,18 @@
 
 \end{center}
 }
-\makeatother
+
 
 %------
 %Folha de aprovacão
 %------
-\makeatletter
 \renewcommand{\ABNTEXsign}[1]{%
 \parbox[t]{15cm}{\SingleSpacing\vspace*{\ABNTEXsignskip}%
-\rule{15cm}{0.1pt}\\
+\rule{15cm}{0.1pt}
 \nopagebreak #1\par}
 }
-\makeatother
+
+
 %---------
 %Sumario
 %---------
@@ -134,5 +134,34 @@
 \cftsetindents{subsection}{0.0em}{4.0em}
 \cftsetindents{subsubsection}{0.0em}{4.0em}
 
+%Fonte (xx) e baselineskip (xx)
+\renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\selectfont}
+\renewcommand{\ABNTEXsectionfontsize}{\fontsize{12}{12}\selectfont}
+\renewcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{12}\selectfont}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\fontsize{12}{12}\selectfont}
 % ---
+% Resumo e abstracts
+\renewenvironment{resumo}[1][\resumoname]{%
+\PRIVATEbookmarkthis{#1}
+\renewcommand{\abstractnamefont}{\chaptitlefont}
+\renewcommand{\abstractname}{\ABNTEXchapterupperifneeded{#1}}
+\begin{abstract}
+\OnehalfSpacing
+}{\end{abstract}\PRIVATEclearpageifneeded}
 
+\renewenvironment{resumoumacoluna}[1][\resumoname]{%
+\PRIVATEbookmarkthis{#1}
+\renewcommand{\abstractnamefont}{\chaptitlefont}
+\renewcommand{\abstractname}{\ABNTEXchapterupperifneeded{#1}}
+\begin{onecolabstract}
+\OnehalfSpacing
+}{\end{onecolabstract}\PRIVATEclearpageifneeded}
+%% remover a fonte sffamily
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+
+ % tamanhos de fontes de section, subsection e subsubsection
+\setsecheadstyle{\ABNTEXsectionfontsize\ABNTEXsectionupperifneeded}
+\setsubsecheadstyle{\ABNTEXsubsectionfont\ABNTEXsubsectionfontsize\ABNTEXsubsectionupperifneeded\bfseries}
+\setsubsubsecheadstyle{\ABNTEXsubsubsectionfontsize\ABNTEXsubsubsectionupperifneeded}
+
+\makeatother
