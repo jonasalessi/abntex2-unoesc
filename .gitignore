@@ -9,3 +9,8 @@
 *.toc
 *.ps
 *.bak
+*.blg
+*.brf
+*.ilg
+*.ind
+*.bbl
