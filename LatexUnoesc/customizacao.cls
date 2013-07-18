@@ -31,6 +31,7 @@
 %-------
 % informações do PDF
 %-------
+\makeatletter
 \hypersetup{
     pdftitle={\@title}, 
     pdfauthor={\@author},
@@ -44,7 +45,7 @@
     %urlcolor=blue,
     bookmarksdepth=4
 }
-
+\makeatother
 %-------
 % Capa
 %-------
@@ -162,6 +163,6 @@
  % tamanhos de fontes de section, subsection e subsubsection
 \setsecheadstyle{\ABNTEXsectionfontsize\ABNTEXsectionupperifneeded}
 \setsubsecheadstyle{\ABNTEXsubsectionfont\ABNTEXsubsectionfontsize\ABNTEXsubsectionupperifneeded\bfseries}
-\setsubsubsecheadstyle{\ABNTEXsubsubsectionfontsize\ABNTEXsubsubsectionupperifneeded}
+\setsubsubsecheadstyle{\ABNTEXsubsubsectionfontsize}
 
 \makeatother
