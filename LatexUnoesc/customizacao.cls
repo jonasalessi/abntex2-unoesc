@@ -35,13 +35,13 @@
 \hypersetup{
     pdftitle={\@title}, 
     pdfauthor={\@author},
-      pdfsubject={\imprimirpreambulo},
-      pdfcreator={TexNaker},
+    pdfsubject={\imprimirpreambulo},
+    pdfcreator={TexNaker},
     pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}{tcc}{unoesc}, 
     colorlinks=true,          % false: boxed links; true: colored links
-      linkcolor=black,              % color of internal links
-     % citecolor=blue,            % color of links to bibliography
-     % filecolor=magenta,        % color of file links
+    linkcolor=black,              % color of internal links
+    citecolor=black,            % color of links to bibliography
+    % filecolor=magenta,        % color of file links
     %urlcolor=blue,
     bookmarksdepth=4
 }
@@ -129,11 +129,16 @@
 
 %---------
 %Sumario
-%---------
-\cftsetindents{chapter}{0.0em}{4.0em}
-\cftsetindents{section}{0.0em}{4.0em}
-\cftsetindents{subsection}{0.0em}{4.0em}
-\cftsetindents{subsubsection}{0.0em}{4.0em}
+%regras da ABNT NBR 6027:2012
+\setlength\cftchapternumwidth{\cftparagraphnumwidth}
+\setlength\cftpartnumwidth{\cftparagraphnumwidth}
+\setlength\cftsubsectionnumwidth{\cftparagraphnumwidth}
+\setlength\cftsectionnumwidth{\cftparagraphnumwidth}
+\setlength\cftsubsubsectionnumwidth{\cftparagraphnumwidth}
+\setlength\cftsubsubsectionindent{0pt}
+\setlength\cftsubsectionindent{0pt}
+\setlength\cftsectionindent{0pt}
+
 
 %Fonte (xx) e baselineskip (xx)
 \renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\selectfont}
