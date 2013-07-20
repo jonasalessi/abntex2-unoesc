@@ -138,7 +138,7 @@
 \setlength\cftsubsubsectionindent{0pt}
 \setlength\cftsubsectionindent{0pt}
 \setlength\cftsectionindent{0pt}
-
+\renewcommand*{\cftsubsectionfont}{\bfseries}
 
 %Fonte (xx) e baselineskip (xx)
 \renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\selectfont}

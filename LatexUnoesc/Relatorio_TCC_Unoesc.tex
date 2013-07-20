@@ -62,19 +62,25 @@
 % RESUMO
 \include{partes/resumos}
 
-% Inserir LISTA DE TABELAS
+% lista de figuras
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+
+% LISTA DE TABELAS
 \pdfbookmark[0]{\listtablename}{lot}
 \listoftables*
 \cleardoublepage  %-- força proxima pagina
 
-% Inserir o SUMARIO
+% SUMARIO
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
 \cleardoublepage
 
-% ----------------------------------------------------------
+% ------------------------------------------------------
 % ELEMENTOS TEXTUAIS
-% ----------------------------------------------------------
+% ------------------------------------------------------
 \textual
 % INTRODUÇÃO
 \include{partes/introducao}
@@ -94,5 +100,7 @@
 % Referências bibliográficas
 % para carregar as referências compile com o bibTex, no TexMaker é so apertar F11
 % ----------------------------------------------------------
+
 \bibliography{referencias}
+
 \end{document}
