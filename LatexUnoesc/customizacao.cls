@@ -96,16 +96,16 @@
 
 { 
 \begin{flushleft} 
+  \begin{SingleSpace}
    \large\imprimirorientadorRotulo~\imprimirorientador\par
+   \abntex@ifnotempty{\imprimircoorientador}{
+       {
+         \large\imprimircoorientadorRotulo~\imprimircoorientador
+       }
+   }
+    \end{SingleSpace}
 \end{flushleft}
  }
-\abntex@ifnotempty{\imprimircoorientador}{%
-    {
-    \begin{flushleft}
-      \large\imprimircoorientadorRotulo~\imprimircoorientador
-    \end{flushleft}
-    }%
-}%
 \vspace*{\fill}
 
 {\large\imprimirlocal}
