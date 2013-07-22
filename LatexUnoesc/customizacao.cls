@@ -41,8 +41,6 @@
     colorlinks=true,          % false: boxed links; true: colored links
     linkcolor=black,              % color of internal links
     citecolor=black,            % color of links to bibliography
-    % filecolor=magenta,        % color of file links
-    %urlcolor=blue,
     bookmarksdepth=4
 }
 \makeatother
@@ -139,6 +137,19 @@
 \setlength\cftsubsectionindent{0pt}
 \setlength\cftsectionindent{0pt}
 \renewcommand*{\cftsubsectionfont}{\bfseries}
+
+% REFERENCIA 
+ \renewcommand{\bibsection}{%
+   \chapter*{\bibname}
+   \bibmark
+   \ifnobibintoc\else
+     \phantomsection
+     \addcontentsline{toc}{chapter}{\indent
+    % \hspace{\cftparagraphnumwidth} alinha a direita
+     {\uppercase{\bibname}}
+     }
+   \fi
+   \prebibhook}
 
 %Fonte (xx) e baselineskip (xx)
 \renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\selectfont}
