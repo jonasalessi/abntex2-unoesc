@@ -17,7 +17,7 @@
 %%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{customizacao}[10/07/2013 Modelo da UNOESC baseado em abnTeX2]
+\ProvidesClass{abntUnoesc}[10/07/2013 Modelo da UNOESC baseado em abnTeX2]
 
 %
 % Repassa todos os parametros a classe abntex2, 
@@ -36,8 +36,8 @@
     pdftitle={\@title}, 
     pdfauthor={\@author},
     pdfsubject={\imprimirpreambulo},
-    pdfcreator={TexNaker},
-    pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}{tcc}{unoesc}, 
+    pdfcreator={TexMaker},
+    pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}{unoesc}, 
     colorlinks=true,          % false: boxed links; true: colored links
     linkcolor=black,              % color of internal links
     citecolor=black,            % color of links to bibliography

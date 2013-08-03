@@ -27,7 +27,7 @@
 	% -- opções do pacote babel --
 	english,			% idioma adicional para hifenização
 	brazil,				% o último idioma é o principal do documento
-	]{customizacao}
+	]{abntUnoesc}
 
 
 \include{inicial}
@@ -73,6 +73,28 @@
 \listoftables*
 \cleardoublepage  %-- força proxima pagina
 
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item[Fig.] Area of the $i^{th}$ component
+  \item[456] Isto é um número
+  \item[123] Isto é outro número
+  \item[lauro cesar] este é o meu nome
+\end{siglas}
+% ---
+
+% ---
+% inserir lista de símbolos
+% ---
+\begin{simbolos}
+  \item[$ \Gamma $] Letra grega Gama
+  \item[$ \Lambda $] Lambda
+  \item[$ \zeta $] Letra grega minúscula zeta
+  \item[$ \in $] Pertence
+\end{simbolos}
+% ---
+
 % SUMARIO
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
@@ -98,8 +120,8 @@
 
 % ----------------------------------------------------------
 % Referências bibliográficas
-% para carregar as referências compile com o bibTex, no TexMaker é so apertar F11
 % ----------------------------------------------------------
+
 
 \bibliography{referencias}
 
