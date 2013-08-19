@@ -17,6 +17,7 @@
 \usepackage[alf, abnt-emphasize=bf]{abntex2cite}				 % Citações padrão ABNT
 \usepackage{lipsum}							   								       % para geração de dummy text
 
+%\captionsetup[table]{justification=raggedright}
 % Configurações de aparência do PDF final
 % alterando o aspecto da cor azul
 \definecolor{blue}{RGB}{41,5,195}
@@ -29,6 +30,9 @@
 
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+\hangcaption
+\captionstyle[\raggedright]{}
 
 %Analisar se isso funciona Espaçamento padrão entrelinhas 
 %\renewcommand{\backref}{}

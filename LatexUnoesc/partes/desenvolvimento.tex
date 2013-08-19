@@ -15,10 +15,12 @@
 \subsection{Tabela}
 %%% EXEMPLO TABELA 
 \begin{table}[htb]
-	\footnotesize
-	\caption[Título na lista de tabelas]{Título da tabela}
+	
 	\label{tab-inicial}
 \begin{center}
+	\changecaptionwidth 
+	\captionwidth{12cm}
+    \caption[Título na lista de tabelas]{Título da tabela}
     \begin{tabular}{p{2.6cm}lp{6.0cm}lp{2.25cm}lp{3.40cm}}
   		 \hline
     	\textbf{Título} & \textbf{Título} & \textbf{Título} & \textbf{Título} \\ \hline
@@ -26,8 +28,8 @@
          tabela & tabela & tabela & tabela\\
   		 tabela & tabela & tabela & tabela\\ \hline
     \end{tabular}
+  \legend{Fonte: \citeonline{livro-unoesc}}
 \end{center}
-    \legend{Fonte: \citeonline{livro-unoesc}}
 \end{table}
 
 \lipsum[1-1]
@@ -35,17 +37,18 @@
 \subsection{Figuras}
 \lipsum[1-1]
 \begin{figure}[htb]
-	\caption{\label{fig_grafico}Small Tux}
 	\begin{center}
+		\changecaptionwidth 
+		\captionwidth{5cm}
+		\caption{\label{fig_grafico}Small Tux}
 	    \includegraphics[scale=0.2]{figuras/tux.png}
+	    \legend{Fonte: \citeonline[p. 44]{livro-unoesc}}
 	\end{center}
-	\legend{Fonte: \citeonline[p. 44]{livro-unoesc}}
 \end{figure}
 
  Teste para carregar referencias \cite{abntex2modelo} abntex2  \cite{abntex2-wiki-como-customizar} para mais informações.
-
 \subsubsection{Seção quaternária}
-\lipsum[1-1]
+
 Segundo  \citeonline[p. 94]{livro-unoesc},
 \begin{citacao}
 Compreende trecho transcrito que apresenta mais de três linhas; mantém-se o discurso do texto original; destaca-se em blocos, espaço simples,com recuo de 4 cm a partir da margem esquerda, com letra menor que a do texto original;sugere-se usar tamanho 10.
