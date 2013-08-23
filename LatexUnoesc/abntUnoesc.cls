@@ -28,6 +28,8 @@
 \LoadClass{abntex2}
 %---------------------------------------------------------------------------------
 
+\newcommand{\supervisorname}{Supervisor:}
+
 %-------
 % informações do PDF
 %-------
@@ -69,6 +71,15 @@
   \end{capa}
 }
 
+% Comandos de dados - supervisor
+\providecommand{\imprimirsupervisorRotulo}{}
+\providecommand{\imprimirsupervisor}{}
+\newcommand{\supervisor}[2][\supervisorname]%
+{\renewcommand{\imprimirsupervisorRotulo}{#1}%
+\renewcommand{\imprimirsupervisor}{#2}}
+%-----
+
+
 %-----
 %Folha de rosto
 %-----
@@ -101,6 +112,11 @@
          \large\imprimircoorientadorRotulo~\imprimircoorientador
        }
    }
+  \abntex@ifnotempty{\imprimirsupervisor}{\par
+      {
+        \large\imprimirsupervisorRotulo~\imprimirsupervisor
+       }
+  }   
     \end{SingleSpace}
 \end{flushleft}
  }
