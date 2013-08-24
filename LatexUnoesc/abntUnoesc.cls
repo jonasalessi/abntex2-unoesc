@@ -79,6 +79,14 @@
 \renewcommand{\imprimirsupervisor}{#2}}
 %-----
 
+% Cabecalho padrao
+\makepagestyle{abntheadings}
+\makeevenhead{abntheadings}{\ABNTEXfontereduzida\thepage}{}{\ABNTEXfontereduzida\textit\leftmark}
+\makeoddhead{abntheadings}{
+\ABNTEXfontereduzida%\textit \rightmark coloca o capitulo atual no header da pagina
+}{}{\ABNTEXfontereduzida\thepage}
+%\makeheadrule{abntheadings}{\textwidth}{\normalrulethickness} coloca o underline em baixo do header
+
 
 %-----
 %Folha de rosto
