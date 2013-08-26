@@ -33,12 +33,13 @@
 \include{inicial}
 
 %----Include da capa é fora do documento 
-\include{partes/capa}
+\include{pretextuais/capa}
 %---
 
 \begin{document}
 % Retira espaço extra obsoleto entre as frases.
 \frenchspacing 
+
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
 % ----------------------------------------------------------
@@ -51,16 +52,16 @@
 % \imprimirfolhaderosto* (o * indica que haverá a ficha bibliográfica)
 
 % Inserir FOLHA DE APROVAÇÃO
-\include{partes/folhadeaprovacao}
+\include{pretextuais/folhadeaprovacao}
 
 % DEDICATÓRIA
-\include{partes/dedicatoria}
+\include{pretextuais/dedicatoria}
 
 % AGRADECIMENTO
-\include{partes/agradecimentos}
+\include{pretextuais/agradecimentos}
 
 % RESUMO
-\include{partes/resumos}
+\include{pretextuais/resumos}
 
 % lista de figuras
 \pdfbookmark[0]{\listfigurename}{lof}
@@ -105,13 +106,19 @@
 % ------------------------------------------------------
 \textual
 % INTRODUÇÃO
-\include{partes/introducao}
+\include{conteudo/introducao}
 
 %DESENVOLVIMENTO
-\include{partes/desenvolvimento}
+\include{conteudo/desenvolvimento}
+
+%FUNDAMENTAÇÃO TEÓRICA
+\include{conteudo/fundamentacao}
+
+%RESULTADOS
+\include{conteudo/resultados}
 
 %CONCLUSÃO
-\include{partes/conclusao}
+\include{conteudo/conclusao}
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -121,7 +128,6 @@
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-
 
 \bibliography{referencias}
 

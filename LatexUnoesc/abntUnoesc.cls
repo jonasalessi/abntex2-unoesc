@@ -53,19 +53,23 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
+     \begin{figure}[ht]
+          \centering
+          \includegraphics[width=0.22\linewidth]{unoesc.png}
+        \end{figure}\vspace{-0.5cm}
     {\ABNTEXchapterfont\large \imprimirinstituicao}
     
-    \vspace*{1cm}
+    \vspace*{3.5cm}
     
     {\ABNTEXchapterfont\large\imprimirautor}
 
-    \vspace*{\fill}
+    \vspace*{4cm}
     {\ABNTEXchapterfont\Large\imprimirtitulo}
     \vspace*{\fill}
     
     {\large\imprimirlocal}
     \par
-    {\large\imprimirdata}
+    {\textbf{\large\imprimirdata}}
     
     \vspace*{1cm}
   \end{capa}
@@ -116,12 +120,12 @@
   \begin{SingleSpace}
    \large\imprimirorientadorRotulo~\imprimirorientador\par
    \abntex@ifnotempty{\imprimircoorientador}{
-       {
+       {\vspace*{-0.2cm}
          \large\imprimircoorientadorRotulo~\imprimircoorientador
        }
    }
   \abntex@ifnotempty{\imprimirsupervisor}{\par
-      {
+      {\vspace*{-0.2cm}
         \large\imprimirsupervisorRotulo~\imprimirsupervisor
        }
   }   
@@ -132,7 +136,7 @@
 
 {\large\imprimirlocal}
 \par
-{\large\imprimirdata}
+{\textbf{\large\imprimirdata}}
 \vspace*{1cm}
 
 \end{center}
