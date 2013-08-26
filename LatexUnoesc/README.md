@@ -1,0 +1,1 @@
+README File do Projeto LaTeX para os Trabalhos de Conclusão de Curso do curso de Egenharia de Computação da Universidade do Oeste de Santa Catarina.
