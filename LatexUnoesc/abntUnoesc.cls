@@ -42,6 +42,7 @@
     pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}{unoesc}, 
     colorlinks=true,          % false: boxed links; true: colored links
     linkcolor=black,              % color of internal links
+    urlcolor=black,              % color of internal links
     citecolor=black,            % color of links to bibliography
     bookmarksdepth=4
 }
