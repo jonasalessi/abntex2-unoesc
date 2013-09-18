@@ -210,4 +210,8 @@
 \setsubsecheadstyle{\ABNTEXsubsectionfont\ABNTEXsubsectionfontsize\ABNTEXsubsectionupperifneeded\bfseries}
 \setsubsubsecheadstyle{\ABNTEXsubsubsectionfontsize}
 
+%--Alinhar espaçamento caption
+ \setlength{\belowcaptionskip}{1mm}
+ \setlength{\abovecaptionskip}{1mm}
+ %----
 \makeatother
