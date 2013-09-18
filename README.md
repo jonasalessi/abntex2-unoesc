@@ -4,7 +4,7 @@ Para utilizar este modelo siga os passos de instalação no site --> https://cod
 
 Após instalar o LaTeX e os pacotes do abntex2 baixe o modelo Unoesc  --> https://github.com/jonasalessi/Model_LaTeX_Unoesc/raw/version_0.1/release_beta.zip
 
-
+Utilizando JabRef para colocar referencias --> http://ultramarcosribeiro.blogspot.com.br/2012/02/referencias-bibliograficas-com-abntex-e.html
 
 ------------------------------------------------
 
