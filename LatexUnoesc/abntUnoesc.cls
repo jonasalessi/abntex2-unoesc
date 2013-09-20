@@ -211,7 +211,15 @@
 \setsubsubsecheadstyle{\ABNTEXsubsubsectionfontsize}
 
 %--Alinhar espaçamento caption
- \setlength{\belowcaptionskip}{1mm}
+ \setlength{\belowcaptionskip}{0mm}
  \setlength{\abovecaptionskip}{1mm}
  %----
+ 
+%Criar contorno
+\newcommand{\contornarFigura}[1]{ 
+\fboxrule=0.015pt  %largura da borda
+  \framebox{
+      #1
+    }
+}
 \makeatother

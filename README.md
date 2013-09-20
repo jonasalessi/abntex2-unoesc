@@ -9,3 +9,6 @@ OBS: Quem estiver utilizando a versão 0.1 por favor subtituir apenas os arquivo
 
 /////////// Referências //////////////////////
 Utilizando JabRef para colocar referências --> http://ultramarcosribeiro.blogspot.com.br/2012/02/referencias-bibliograficas-com-abntex-e.html
+
+/////// TABELAS /////////
+Uma mão na roda para criação de tabelas em latex --> http://aprendolatex.wordpress.com/tag/excel2latex/
