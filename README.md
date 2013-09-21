@@ -9,6 +9,8 @@ OBS: Quem estiver utilizando a versão 0.1 por favor substituir apenas os arquiv
 - inicial.tex
 - abntUnoesc.cls
 
+Se estiver utilizando a \legend substitua por \fonte.
+
 /////////// Referências //////////////////////
 Utilizando JabRef para colocar referências --> http://ultramarcosribeiro.blogspot.com.br/2012/02/referencias-bibliograficas-com-abntex-e.html
 
