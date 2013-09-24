@@ -23,12 +23,11 @@ Nam dui ligulaquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl he
 \subsection{Tabela}
 %%% EXEMPLO TABELA 
 \begin{table}[htb]
-	
-	\label{tab-inicial}
 \begin{center}
-	\changecaptionwidth 
-	\captionwidth{12.4cm}
+   \IBGEtab{ %Este macro alinha o titulo e fonte a esquerda \IBGEtab{caption label} {tabela ou figura} {fonte}
     \caption{Título da tabela}
+    \label{tab:inicial}
+    }{
     \begin{tabular}{p{2.6cm}lp{6.0cm}lp{2.25cm}lp{3.40cm}}
   		 \hline
     	\textbf{Título} & \textbf{Título} & \textbf{Título} & \textbf{Título} \\ \hline
@@ -36,7 +35,11 @@ Nam dui ligulaquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl he
          tabela & tabela & tabela & tabela\\
   		 tabela & tabela & tabela & tabela\\ \hline
     \end{tabular}
-  \fonte{\citeonline{livro-unoesc}}
+    }{
+      \fonte{\citeonline{livro-unoesc}}
+    %  \nota{Exemplo de nota}
+    % \nota[Anotações]{Exemplo nota personalizada}
+   }
 \end{center}
 \end{table}
 
@@ -46,11 +49,14 @@ Nam dui ligulaquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl he
 \lipsum[1-1]
 \begin{figure}[htb]
 	\begin{center}
-		\changecaptionwidth 
-		\captionwidth{9.5cm}
+      \IBGEtab{
 		\caption{\label{fig_grafico}Gráfico}
-	    \includegraphics[scale=0.9]{figuras/grafico.png}
-	    \fonte{o autor.}
+		\label{fig:grafico}
+	  }{
+	       \includegraphics[scale=0.9]{figuras/grafico.png}
+      }{
+        \fonte{o autor.}
+      }
 	\end{center}
 \end{figure}
 
