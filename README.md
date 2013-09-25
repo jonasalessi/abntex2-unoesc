@@ -9,7 +9,7 @@ OBS: Quem estiver utilizando a versão 0.1 por favor substituir apenas os arquiv
 - inicial.tex
 - abntUnoesc.cls
 
-Na versão 1.8 do abntex2 foi criado a macro \IBGEtab. Este macro alinha o titulo e fonte a esquerda utilizando da seguinte forma:
+Na versão 1.8 do abntex2 foi criado a macro \IBGEtab. Esta macro alinha o título e fonte a esquerda:
 		 \IBGEtab{caption e label} {tabela ou figura} {fonte}
 
 Se estiver utilizando a \legend substitua por \fonte.
