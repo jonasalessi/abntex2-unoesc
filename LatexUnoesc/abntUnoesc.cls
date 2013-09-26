@@ -29,7 +29,7 @@
 %---------------------------------------------------------------------------------
 
 \newcommand{\supervisorname}{Supervisor:}
-
+\newcommand{\listQuadroname}{Lista de Quadros}
 %-------
 % informações do PDF
 %-------
@@ -54,25 +54,21 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-     \begin{figure}[ht]
-          \centering
-          \includegraphics[width=0.22\linewidth]{unoesc.png}
-        \end{figure}\vspace{-0.5cm}
-    {\ABNTEXchapterfont\large \imprimirinstituicao}
+    {\large \imprimirinstituicao}
     
     \vspace*{3.5cm}
     
-    {\ABNTEXchapterfont\large\imprimirautor}
+    {\large\imprimirautor}
 
     \vspace*{4cm}
-    {\ABNTEXchapterfont\Large\imprimirtitulo}
+    {\Large\imprimirtitulo}
     \vspace*{\fill}
     
     {\large\imprimirlocal}
     \par
-    {\textbf{\large\imprimirdata}}
+    {\large\imprimirdata}
     
-    \vspace*{1cm}
+    \vspace*{0.3cm}
   \end{capa}
 }
 
@@ -100,10 +96,10 @@
    \begin{center}
 
 %\vspace*{1cm}
-{\ABNTEXchapterfont\large\imprimirautor}
+{\large\imprimirautor}
 
 \vspace*{\fill}\vspace*{\fill}
-{\ABNTEXchapterfont\Large\imprimirtitulo}
+{\Large\imprimirtitulo}
 \vspace*{\fill}
 
 \abntex@ifnotempty{\imprimirpreambulo}{%
@@ -137,7 +133,7 @@
 
 {\large\imprimirlocal}
 \par
-{\textbf{\large\imprimirdata}}
+{\large\imprimirdata}
 \vspace*{1cm}
 
 \end{center}
@@ -174,7 +170,7 @@
    \ifnobibintoc\else
      \phantomsection
      \addcontentsline{toc}{chapter}{\indent
-    % \hspace{\cftparagraphnumwidth} alinha a direita
+     %\hspace{\cftparagraphnumwidth}
      {\uppercase{\bibname}}
      }
    \fi
@@ -222,4 +218,5 @@
       #1
     }
 }
+
 \makeatother

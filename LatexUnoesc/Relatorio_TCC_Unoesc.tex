@@ -9,7 +9,7 @@
 % ------------------------------------------------------------------------
 % Autor:  Jonas Alessi(alessi.jonas@gmail.com
 % Versão: 10 de Junlho 2013.
-% Edição: TexMaker
+% Edição: TexStudio
 % LaTeX:  abnTeX2
 %
 %=======================================================================
@@ -37,6 +37,7 @@
 %---
 
 \begin{document}
+%\OnehalfSpacing
 % Retira espaço extra obsoleto entre as frases.
 \frenchspacing 
 
@@ -66,11 +67,15 @@
 % RESUMO
 \include{pretextuais/resumos}
 
-% lista de figuras
+% lista de ilustrações
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
 \cleardoublepage
 
+% lista de quadros
+\pdfbookmark[0]{\listQuadroname}{lof}
+\listoffigures*
+\cleardoublepage
 
 % LISTA DE TABELAS
 \pdfbookmark[0]{\listtablename}{lot}
@@ -81,9 +86,10 @@
 % inserir lista de abreviaturas e siglas
 % ---
 \begin{siglas}
-  \item[Fig.] Area of the $i^{th}$ component
-  \item[456] Isto é um número
-  \item[123] Isto é outro número
+  \item[ABNT] Associação Brasileira de Normas Técnicas
+  \item[Bras.] Brasileiro
+  \item[CNPq] Conselho Nacional de Desenvolvimento Científico e Tecnológico
+  \item[IBGE] Instituto Brasileiro de Geografia e Estatística
 \end{siglas}
 % ---
 
@@ -110,11 +116,11 @@
 % INTRODUÇÃO
 \include{conteudo/introducao}
 
-%DESENVOLVIMENTO
-\include{conteudo/desenvolvimento}
-
 %FUNDAMENTAÇÃO TEÓRICA
 \include{conteudo/fundamentacao}
+
+%DESENVOLVIMENTO
+\include{conteudo/desenvolvimento}
 
 %RESULTADOS
 \include{conteudo/resultados}
