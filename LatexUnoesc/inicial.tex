@@ -9,6 +9,7 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
+
 %----Ajuste no alinhamento das listas
 \usepackage{enumitem}
 \setitemize[0]{itemindent=0.4cm,itemsep=0pt}
@@ -33,6 +34,7 @@
 % Configurações de aparência do PDF final
 % alterando o aspecto da cor azul
 \definecolor{blue}{RGB}{41,5,195}
+
 % --- 
 % Espaçamentos entre linhas e parágrafos 
 % --- 
@@ -40,8 +42,12 @@
 \setlength{\parindent}{1.25cm}
 \linespread{1.5}
 
+%Espaçamento depois dos títulos
+\setlength{\afterchapskip}{\baselineskip}
+% %\setlength{\afterchapskip}{\lineskip}
+
 % Controle do espaçamento entre um parágrafo e outro:
-\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+\setlength{\parskip}{0cm}  % tente também \onelineskip
 
 \hangcaption
 \captionstyle[\raggedright]{}

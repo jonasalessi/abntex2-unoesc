@@ -29,7 +29,6 @@
 %---------------------------------------------------------------------------------
 
 \newcommand{\supervisorname}{Supervisor:}
-\newcommand{\listQuadroname}{Lista de Quadros}
 %-------
 % informações do PDF
 %-------
@@ -53,7 +52,8 @@
 \makeatletter
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
-    \center
+    \begin{center}
+    
     {\large \imprimirinstituicao}
     
     \vspace*{3.5cm}
@@ -67,8 +67,8 @@
     {\large\imprimirlocal}
     \par
     {\large\imprimirdata}
-    
-    \vspace*{0.3cm}
+    \end{center}
+   % \vspace*{0.3cm}
   \end{capa}
 }
 
@@ -79,6 +79,12 @@
 {\renewcommand{\imprimirsupervisorRotulo}{#1}%
 \renewcommand{\imprimirsupervisor}{#2}}
 %-----
+
+%Comandos para ilustacoes
+\newcommand{\fotografia}[1]{
+	
+}
+%---
 
 % Cabecalho padrao
 \makepagestyle{abntheadings}
@@ -117,12 +123,12 @@
   \begin{SingleSpace}
    \large\imprimirorientadorRotulo~\imprimirorientador\par
    \abntex@ifnotempty{\imprimircoorientador}{
-       {\vspace*{-0.2cm}
+       { %\vspace*{-0.1cm}
          \large\imprimircoorientadorRotulo~\imprimircoorientador
        }
    }
   \abntex@ifnotempty{\imprimirsupervisor}{\par
-      {\vspace*{-0.2cm}
+      { %\vspace*{-0.1cm}
         \large\imprimirsupervisorRotulo~\imprimirsupervisor
        }
   }   
@@ -134,7 +140,7 @@
 {\large\imprimirlocal}
 \par
 {\large\imprimirdata}
-\vspace*{1cm}
+%\vspace*{1cm}
 
 \end{center}
 }
@@ -170,8 +176,8 @@
    \ifnobibintoc\else
      \phantomsection
      \addcontentsline{toc}{chapter}{\indent
-     %\hspace{\cftparagraphnumwidth}
-     {\uppercase{\bibname}}
+     \hspace{\cftparagraphnumwidth}
+     {\hspace{-0.1cm}\uppercase{\bibname}} 
      }
    \fi
    \prebibhook}
@@ -207,16 +213,96 @@
 \setsubsubsecheadstyle{\ABNTEXsubsubsectionfontsize}
 
 %--Alinhar espaçamento caption
- \setlength{\belowcaptionskip}{0mm}
+ \setlength{\belowcaptionskip}{0.5mm}
  \setlength{\abovecaptionskip}{1mm}
  %----
  
 %Criar contorno
-\newcommand{\contornarFigura}[1]{ 
+\newcommand{\criarBorda}[1]{ 
 \fboxrule=0.015pt  %largura da borda
   \framebox{
       #1
     }
 }
 
+%% Lista de quadros
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{~~--}
+
+
+% % Grafico
+\newcommand{\graficoname}{Gr\'{a}fico}
+\newfloat[chapter]{grafico}{lof}{\graficoname}
+\newlistentry{grafico}{lof}{0}
+\counterwithout{grafico}{chapter}
+\renewcommand{\cftgraficoname}{\graficoname\space} 
+\renewcommand*{\cftgraficoaftersnum}{~~--}
+
+%% Fotografia
+\newcommand{\fotografname}{Fotografia}
+\newfloat[chapter]{fotograf}{lof}{\fotografname}
+\newlistentry{fotograf}{lof}{0}
+\counterwithout{fotograf}{chapter}
+\renewcommand{\cftfotografname}{\fotografname\space} 
+\renewcommand*{\cftfotografaftersnum}{~~--}
+
+%% Fluxograma
+\newcommand{\fluxogramaname}{Fluxograma}
+\newfloat[chapter]{fluxograma}{lof}{\fluxogramaname}
+\newlistentry{fluxograma}{lof}{0}
+\counterwithout{fluxograma}{chapter}
+\renewcommand{\cftfluxogramaname}{\fluxogramaname\space} 
+\renewcommand*{\cftfluxogramaaftersnum}{~~--}
+
+%% Organograma
+\newcommand{\organogramaname}{Organograma}
+\newfloat[chapter]{organograma}{lof}{\organogramaname}
+\newlistentry{organograma}{lof}{0}
+\counterwithout{organograma}{chapter}
+\renewcommand{\cftorganogramaname}{\organogramaname\space} 
+\renewcommand*{\cftorganogramaaftersnum}{~~--}
+
+%% Diagrama
+\newcommand{\diagramaname}{Diagrama}
+\newfloat[chapter]{diagrama}{lof}{\diagramaname}
+\newlistentry{diagrama}{lof}{0}
+\counterwithout{diagrama}{chapter}
+\renewcommand{\cftdiagramaname}{\diagramaname\space} 
+\renewcommand*{\cftdiagramaaftersnum}{~~--}
+
+%% Esquema
+\newcommand{\esquemaname}{Esquema}
+\newfloat[chapter]{esquema}{lof}{\esquemaname}
+\newlistentry{esquema}{lof}{0}
+\counterwithout{esquema}{chapter}
+\renewcommand{\cftesquemaname}{\esquemaname\space} 
+\renewcommand*{\cftesquemaaftersnum}{~~--}
+
+
+%% Mapa
+\newcommand{\mapaname}{Mapa}
+\newfloat[chapter]{mapa}{lof}{\mapaname}
+\newlistentry{mapa}{lof}{0}
+\counterwithout{mapa}{chapter}
+\renewcommand{\cftmapaname}{\mapaname\space} 
+\renewcommand*{\cftmapaaftersnum}{~~--}
+
+%% Desenho
+\newcommand{\desenhoname}{Desenho}
+\newfloat[chapter]{desenho}{lof}{\desenhoname}
+\newlistentry{desenho}{lof}{0}
+\counterwithout{desenho}{chapter}
+\renewcommand{\cftdesenhoname}{\desenhoname\space} 
+\renewcommand*{\cftdesenhoaftersnum}{~~--}
+
+%Alinhar tabela a esquerda
+\newcommand{\leftable}{
+	\hskip-3.1cm
+}
 \makeatother
