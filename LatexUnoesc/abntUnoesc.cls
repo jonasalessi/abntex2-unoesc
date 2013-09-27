@@ -53,7 +53,7 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \begin{center}
-    
+    \vspace*{-1.2cm}
     {\large \imprimirinstituicao}
     
     \vspace*{3.5cm}
@@ -68,7 +68,7 @@
     \par
     {\large\imprimirdata}
     \end{center}
-   % \vspace*{0.3cm}
+    \vspace*{-0.7cm}
   \end{capa}
 }
 
@@ -101,7 +101,7 @@
 \renewcommand{\imprimirfolhaderosto}{
    \begin{center}
 
-%\vspace*{1cm}
+\vspace*{-1.2cm}
 {\large\imprimirautor}
 
 \vspace*{\fill}\vspace*{\fill}
@@ -140,7 +140,7 @@
 {\large\imprimirlocal}
 \par
 {\large\imprimirdata}
-%\vspace*{1cm}
+ \vspace*{-0.7cm}
 
 \end{center}
 }
