@@ -305,4 +305,27 @@
 \newcommand{\leftable}{
 	\hskip-3.1cm
 }
+
+% ---
+% Lista de abreviaturas e siglas
+\renewenvironment{siglas}{%
+\pretextualchapter{\listadesiglasname}
+\OnehalfSpacing %Espaçamento 1.5
+\begin{symbols}
+}{%
+\end{symbols}
+\cleardoublepage
+}
+
+% ---
+% Lista de sembolos
+\renewenvironment{simbolos}{%
+\pretextualchapter{\listadesimbolosname}
+\OnehalfSpacing %Espaçamento 1.5
+\begin{symbols}
+}{%
+\end{symbols}
+\cleardoublepage
+}
+% ---
 \makeatother
