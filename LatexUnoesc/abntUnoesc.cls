@@ -80,12 +80,6 @@
 \renewcommand{\imprimirsupervisor}{#2}}
 %-----
 
-%Comandos para ilustacoes
-\newcommand{\fotografia}[1]{
-	
-}
-%---
-
 % Cabecalho padrao
 \makepagestyle{abntheadings}
 \makeevenhead{abntheadings}{\ABNTEXfontereduzida\thepage}{}{\ABNTEXfontereduzida\textit\leftmark}
@@ -245,12 +239,12 @@
 \renewcommand*{\cftgraficoaftersnum}{~~--}
 
 %% Fotografia
-\newcommand{\fotografname}{Fotografia}
-\newfloat[chapter]{fotograf}{lof}{\fotografname}
-\newlistentry{fotograf}{lof}{0}
-\counterwithout{fotograf}{chapter}
-\renewcommand{\cftfotografname}{\fotografname\space} 
-\renewcommand*{\cftfotografaftersnum}{~~--}
+\newcommand{\fotografianame}{Fotografia}
+\newfloat[chapter]{fotografia}{lof}{\fotografianame}
+\newlistentry{fotografia}{lof}{0}
+\counterwithout{fotografia}{chapter}
+\renewcommand{\cftfotografianame}{\fotografianame\space} 
+\renewcommand*{\cftfotografiaaftersnum}{~~--}
 
 %% Fluxograma
 \newcommand{\fluxogramaname}{Fluxograma}
