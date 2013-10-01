@@ -322,4 +322,9 @@
 \cleardoublepage
 }
 % ---
+
+%Ajuste no espaçamento das listas de tabela, ilustrações e quadros
+\setlength\cftbeforechapterskip{0pt}
+\renewcommand{\insertchapterspace}{}
+
 \makeatother
