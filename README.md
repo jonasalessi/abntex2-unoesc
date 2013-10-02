@@ -2,12 +2,7 @@ README File do Projeto LaTeX para os Trabalhos de Conclusão de Curso do curso d
 
 Para utilizar este modelo siga os passos de instalação no site --> https://code.google.com/p/abntex2/wiki/Instalacao
 
-Após instalar o LaTeX e os pacotes do abntex2 baixe o modelo Unoesc  --> https://github.com/jonasalessi/Model_LaTeX_Unoesc/archive/TAG.0.2.zip
-
-OBS: Quem estiver utilizando a versão 0.1 por favor substituir apenas os arquivos:
-	
-- inicial.tex
-- abntUnoesc.cls
+Após instalar o LaTeX e os pacotes do abntex2 baixe o modelo Unoesc  --> https://github.com/jonasalessi/Model_LaTeX_Unoesc/archive/TAG.1.0.zip
 
 Na versão 1.8 do abntex2 foi criado a macro \IBGEtab. Esta macro alinha o título e fonte a esquerda:
 		 \IBGEtab{caption e label} {tabela ou figura} {fonte}
