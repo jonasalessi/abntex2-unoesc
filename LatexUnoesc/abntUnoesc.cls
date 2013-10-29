@@ -208,8 +208,8 @@
 \setsubsubsecheadstyle{\ABNTEXsubsubsectionfontsize}
 
 %--Alinhar espaçamento caption
- \setlength{\belowcaptionskip}{0.5mm}
- \setlength{\abovecaptionskip}{1mm}
+ \setlength{\belowcaptionskip}{0.2mm}
+ \setlength{\abovecaptionskip}{0.5mm}
  %----
  
 %Criar contorno
@@ -221,6 +221,7 @@
 }
 
 %% Lista de quadros
+
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de quadros}
 \newfloat[chapter]{quadro}{loq}{\quadroname}
@@ -228,7 +229,7 @@
 \newlistentry{quadro}{loq}{0}
 \counterwithout{quadro}{chapter}
 \renewcommand{\cftquadroname}{\quadroname\space} 
-\renewcommand*{\cftquadroaftersnum}{~~--}
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 
 
 % % Grafico
