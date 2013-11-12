@@ -5,6 +5,7 @@
 % abnTeX2: Modelo de Trabalho Academico  em conformidade com 
 % ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos
 % ------------------------------------------------------------------------
+%Customização Unoesc
 % ------------------------------------------------------------------------
 % Autor:  Jonas Alessi(alessi.jonas@gmail.com
 % Versão: 10 de Julho 2013.
@@ -26,11 +27,12 @@
 	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
 	% -- opções do pacote babel --
 	english,			% idioma adicional para hifenização
-	brazil,				% o último idioma é o principal do documento
-	]{abntUnoesc}
+	brazil			% o último idioma é o principal do documento
+	,sumario=tradicional
+	]{abntex2-unoesc}
 
 
-\include{inicial}
+\include{config_inicial}
 
 %----Include da capa é fora do documento 
 \include{pretextuais/capa}
@@ -73,7 +75,8 @@
 % ---
 
 % lista de quadros
-% ---
+% --- 
+%PRECISO VER COMO FAZER O CONTROLE DE QUANDO TIVER MENOS Q 10 VAI PARA LISTA DE ILUSTRAÇÕES
 \pdfbookmark[0]{\listofquadrosname}{loq}
 \listofquadros*
 \cleardoublepage

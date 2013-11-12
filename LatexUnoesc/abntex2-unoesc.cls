@@ -17,15 +17,15 @@
 %%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{abntUnoesc}[10/07/2013 Modelo da UNOESC baseado em abnTeX2]
+\ProvidesClass{abntex2UNOESC}[10/07/2013 Modelo da UNOESC baseado em abnTeX2]
 
 %
 % Repassa todos os parametros a classe abntex2, 
 \DeclareOption*{%
-  \PassOptionsToClass{\CurrentOption}{abntex2}%
+  \PassOptionsToClass{\CurrentOption}{abntex2/abntex2}%
 }
 \ProcessOptions\relax
-\LoadClass{abntex2}
+\LoadClass{abntex2/abntex2}
 %---------------------------------------------------------------------------------
 
 \newcommand{\supervisorname}{Supervisor:}
