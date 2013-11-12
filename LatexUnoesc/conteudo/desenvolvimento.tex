@@ -26,8 +26,33 @@ Marca registrada\textsuperscript{\textregistered}:
 		\end{verbatim}
 \section{SEÇÃO}
 
-\lipsum[1-1]
-
+ Todas as \textbf{tabelas} e \textbf{figuras} deverão usar a macro \textbf{IBGEtab}, a qual faz o alinhamento a esquerda da legenda e fonte.
+ \begin{verbatim}
+ \IBGEtab{
+ 	\caption{xxxx} 
+ 	\label{xx:xxxx}
+ } {
+ 	tabela ou figura
+ } {
+ 	\fonte{xxxx}
+ }
+ \end{verbatim} 
+ 
+ Para alinhar a esquerda as \textbf{figuras} ou \textbf{fabelas} deverá ser usada a macro  \textbf{leftable}. Exemplo:
+ \begin{verbatim}
+ \begin{table}[htb]
+  \leftable
+  ......
+  ....
+  \end{table}
+ \end{verbatim}
+ 
+ Para criar borda nas \textbf{figuras} poderá ser usada a macro \textbf{criarBorda}. Exemplo:
+ \begin{verbatim}
+ 	\criarBorda{
+  		\includegraphics[scale=0.4]{figuras/......}
+     }
+ \end{verbatim}
 \subsection{Subseção de desenvolvimento}
 
 \lipsum[1-1]

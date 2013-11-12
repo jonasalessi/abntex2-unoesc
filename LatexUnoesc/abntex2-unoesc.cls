@@ -17,7 +17,7 @@
 %%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{abntex2UNOESC}[10/07/2013 Modelo da UNOESC baseado em abnTeX2]
+\ProvidesClass{abntex2-unoesc}[10/07/2013 Modelo da UNOESC baseado em abnTeX2]
 
 %
 % Repassa todos os parametros a classe abntex2, 

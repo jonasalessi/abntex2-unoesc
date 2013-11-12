@@ -177,7 +177,7 @@
 
 \RequirePackage{ifthen}
 \RequirePackage{calc}
-\RequirePackage{abntex2abrev}
+\RequirePackage{abntex2/abntex2abrev}
 \RequirePackage{setspace}	
 \RequirePackage{url} %*****
 
@@ -465,9 +465,9 @@
 	               \and\boolean{ABCIauto-abntoptions}}
 	   {
 	   % this system of checking is not good...
-	    \IfSubStringInString{abntex2-options}{#1}
+	    \IfSubStringInString{abntex2/abntex2-options}{#1}
 	      {\if@filesw\immediate\write\@auxout{\string\bibdata{#1}}\fi}
-	      {\if@filesw\immediate\write\@auxout{\string\bibdata{abntex2-options,#1}}\fi}
+	      {\if@filesw\immediate\write\@auxout{\string\bibdata{abntex2/abntex2-options,#1}}\fi}
 	      }
 	   {
 	    \if@filesw
@@ -500,7 +500,7 @@
 % \AtEndDocument is the last chace for include bibliography style..
 \AtEndDocument{
   \ifthenelse{\not\boolean{ABCIbibtexstyleused}}
-    {\bibliographystyle{abntex2-\AbntCitetype}}
+    {\bibliographystyle{abntex2/abntex2-\AbntCitetype}}
     {}
 }
 
