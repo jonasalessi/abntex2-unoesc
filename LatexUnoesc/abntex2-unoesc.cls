@@ -61,7 +61,7 @@
     {\large\imprimirautor}
 
     \vspace*{4cm}
-    {\Large\imprimirtitulo}
+    {\large\imprimirtitulo}
     \vspace*{\fill}
     
     {\large\imprimirlocal}
@@ -99,7 +99,7 @@
 {\large\imprimirautor}
 
 \vspace*{\fill}\vspace*{\fill}
-{\Large\imprimirtitulo}
+{\large\imprimirtitulo}
 \vspace*{\fill}
 
 \abntex@ifnotempty{\imprimirpreambulo}{%
@@ -238,7 +238,7 @@
 \newlistentry{grafico}{lof}{0}
 \counterwithout{grafico}{chapter}
 \renewcommand{\cftgraficoname}{\graficoname\space} 
-\renewcommand*{\cftgraficoaftersnum}{~~--}
+\renewcommand*{\cftgraficoaftersnum}{\hfill--\hfill}
 
 %% Fotografia
 \newcommand{\fotografianame}{Fotografia}
@@ -246,7 +246,7 @@
 \newlistentry{fotografia}{lof}{0}
 \counterwithout{fotografia}{chapter}
 \renewcommand{\cftfotografianame}{\fotografianame\space} 
-\renewcommand*{\cftfotografiaaftersnum}{~~--}
+\renewcommand*{\cftfotografiaaftersnum}{\hfill--\hfill}
 
 %% Fluxograma
 \newcommand{\fluxogramaname}{Fluxograma}
@@ -254,7 +254,7 @@
 \newlistentry{fluxograma}{lof}{0}
 \counterwithout{fluxograma}{chapter}
 \renewcommand{\cftfluxogramaname}{\fluxogramaname\space} 
-\renewcommand*{\cftfluxogramaaftersnum}{~~--}
+\renewcommand*{\cftfluxogramaaftersnum}{\hfill--\hfill}
 
 %% Organograma
 \newcommand{\organogramaname}{Organograma}
@@ -262,7 +262,7 @@
 \newlistentry{organograma}{lof}{0}
 \counterwithout{organograma}{chapter}
 \renewcommand{\cftorganogramaname}{\organogramaname\space} 
-\renewcommand*{\cftorganogramaaftersnum}{~~--}
+\renewcommand*{\cftorganogramaaftersnum}{\hfill--\hfill}
 
 %% Diagrama
 \newcommand{\diagramaname}{Diagrama}
@@ -270,7 +270,7 @@
 \newlistentry{diagrama}{lof}{0}
 \counterwithout{diagrama}{chapter}
 \renewcommand{\cftdiagramaname}{\diagramaname\space} 
-\renewcommand*{\cftdiagramaaftersnum}{~~--}
+\renewcommand*{\cftdiagramaaftersnum}{\hfill--\hfill}
 
 %% Esquema
 \newcommand{\esquemaname}{Esquema}
@@ -278,7 +278,7 @@
 \newlistentry{esquema}{lof}{0}
 \counterwithout{esquema}{chapter}
 \renewcommand{\cftesquemaname}{\esquemaname\space} 
-\renewcommand*{\cftesquemaaftersnum}{~~--}
+\renewcommand*{\cftesquemaaftersnum}{\hfill--\hfill}
 
 
 %% Mapa
@@ -287,7 +287,7 @@
 \newlistentry{mapa}{lof}{0}
 \counterwithout{mapa}{chapter}
 \renewcommand{\cftmapaname}{\mapaname\space} 
-\renewcommand*{\cftmapaaftersnum}{~~--}
+\renewcommand*{\cftmapaaftersnum}{\hfill--\hfill}
 
 %% Desenho
 \newcommand{\desenhoname}{Desenho}
@@ -295,7 +295,7 @@
 \newlistentry{desenho}{lof}{0}
 \counterwithout{desenho}{chapter}
 \renewcommand{\cftdesenhoname}{\desenhoname\space} 
-\renewcommand*{\cftdesenhoaftersnum}{~~--}
+\renewcommand*{\cftdesenhoaftersnum}{\hfill--\hfill}
 
 %Alinhar tabela a esquerda
 \newcommand{\leftable}{
