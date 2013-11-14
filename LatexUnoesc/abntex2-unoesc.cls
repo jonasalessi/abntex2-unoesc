@@ -213,7 +213,7 @@
  %----
  
 %Criar contorno
-\newcommand{\criarBorda}[1]{ 
+\newcommand{\borda}[1]{ 
 \fboxrule=0.015pt  %largura da borda
   \framebox{
       #1
