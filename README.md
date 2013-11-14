@@ -9,8 +9,9 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
 1 - Instalação dos pacotes do **texlive** na versão 2012 ou superior;
 
-**Ubuntu**
-
+**Ubuntu 13.04 ou superiores**
+    sudo apt-get install texlive-full
+**Ubuntu 12**
     sudo add-apt-repository ppa:texlive-backports/ppa
     sudo apt-get update
     sudo apt-get install texlive
@@ -36,12 +37,11 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
 **Ubuntu**
 
-    sudo apt-get install texlive-full
     sudo apt-get install texlive-latex-extra
 
 **Fedora**
 
-    sudo yum install texlive tex-babel-portuges texlive-lipsum texlive-lastpage
+    sudo yum install tex-babel-portuges texlive-lipsum texlive-lastpage
 
 **Windows**
 
