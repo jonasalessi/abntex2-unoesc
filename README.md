@@ -48,12 +48,9 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
 **Windows**
 
-> [Guia rápido de instalação](http://tug.org/texlive/quickinstall.html)
+> [Download](http://miktex.org/download)
 
-> [Detalhes da instalação e solução de problemas](http://tug.org/texlive/windows.html)
-
-> [Guia completo de instalação](http://tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
-
+> [Guia de instalação](http://docs.miktex.org/2.9/manual/installing.html)
 
 4 - Realize o download do modelo da Unoesc. Neste modelo já está incluso o pacote da abntex2;
 
