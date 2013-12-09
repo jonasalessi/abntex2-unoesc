@@ -17,7 +17,7 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
     sudo add-apt-repository ppa:texlive-backports/ppa
     sudo apt-get update
-    sudo apt-get install texlive
+    sudo apt-get install texlive texlive-latex-extra
 
 **Fedora**
 
