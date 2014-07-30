@@ -37,7 +37,7 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
 **Fedora**
 
-    yum install textlive -y
+    yum install texlive -y
 
 
 2 - Caso você já possua os texlive instalado em versões anterioes é possível  atualizá-lo;
