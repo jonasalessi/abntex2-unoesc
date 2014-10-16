@@ -70,7 +70,7 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
 4 - Realize o download do modelo da Unoesc. Neste modelo já está incluso o pacote da abntex2;
 
- > [Modelo 2.0](https://github.com/jonasalessi/Model_LaTeX_Unoesc/archive/TAG.2.0.zip)
+ > [Modelo 2.1](https://github.com/jonasalessi/abntex2-unoesc/archive/TAG.2.1.zip)
  
 5 - Escreva seu trabalho.
 
