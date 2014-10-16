@@ -83,34 +83,62 @@ Marca registrada\textsuperscript{\textregistered}:
 
 
 \subsection{Imagens}
-
+Exemplo do ambiente \textbf{quadro} no Quadro \ref{quad:ranking}.
 % ----------------- Quadro ------------- %
 %O Quadro \ref{fig:ranking} foi criado utilizando o ambiente "quadro".
 \begin{quadro}[htb]
+	\IBGEtab{
 	\caption{Ranking de linguagens de programação - Fev/2009}
-	\label{fig:ranking}
+	\label{quad:ranking}
+ 	}{
  	\includegraphics[width=\textwidth]{figuras/ranking}
-    \fonte{o autor.}
+   }{
+      \fonte{o autor.}
+      }
 \end{quadro}
+
+% %Com o newpage vou forçar a descrição ficar na próxima página
+\newpage
+Quando tiver menos que 10 quadros é obrigatório os mesmos ficarem na lista de ilustrações, infelizmente não foi possível fazer de uma forma automática isso, então para atender está necessidade você pode utilizar o ambiente \textbf{begin\{quadrof\}},  Quadro \ref{quad:quadIlustracoes}.
+
+
+\begin{quadrof}[htb]
+	\IBGEtab{
+	\caption{Quadro na lista de ilustrações}
+	\label{quad:quadIlustracoes}
+ 	}{
+ 	\includegraphics[width=\textwidth]{figuras/ranking}
+   }{
+      \fonte{o autor.}
+      }
+\end{quadrof}
 
 % ----------------- Gráfico ------------- %
 %O Gráfico \ref{fig:grafico2} foi criado utilizando o ambiente "grafico".
 \begin{grafico}[htb]
+	\IBGEtab{
 	\caption{Exemplo de gráfico}
 	\label{graf:grafico2}
- 	\borda{
- 		\includegraphics[scale=0.4]{figuras/grafico}
-    }
-    \fonte{o autor.}
+ 	}{
+ 		\borda{
+ 	 		\includegraphics[scale=0.4]{figuras/grafico}
+ 	    }
+   }{
+      \fonte{o autor.}
+      }
 \end{grafico}
 
 % ----------------- Fotografia ------------- %
 %A Fotografia \ref{fig:grafico3} foi criado utilizando o ambiente "fotografia".
 \begin{fotografia}[htb]
+ \IBGEtab{
 	\caption{Exemplo de fotografia}
 	\label{fot:grafico3}
- 	\includegraphics[width=\textwidth]{figuras/fotografia}
-    \fonte{o autor.}
+ } {
+  	\includegraphics[width=\textwidth]{figuras/fotografia}
+ } {
+ 	\fonte{o autor.}
+ }
 \end{fotografia}
 
 % ----------------- Fluxograma ------------- %

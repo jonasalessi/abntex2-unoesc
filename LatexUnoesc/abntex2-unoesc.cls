@@ -231,6 +231,14 @@
 \renewcommand{\cftquadroname}{\quadroname\space} 
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 
+% % Quadro na lista de ilustrações
+
+\newcommand{\quadrofname}{Quadro}
+\newfloat[chapter]{quadrof}{lof}{\quadrofname}
+\newlistentry{quadrof}{lof}{0}
+\counterwithout{quadrof}{chapter}
+\renewcommand{\cftquadrofname}{\quadrofname\space} 
+\renewcommand*{\cftquadrofaftersnum}{\hfill--\hfill}
 
 % % Grafico
 \newcommand{\graficoname}{Gr\'{a}fico}
