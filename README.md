@@ -1,4 +1,4 @@
- Customizações do abnTeX2 (http://abnTeX2.googlecode.com) para o Curso de Engenharia de Computação da Universidade do Oeste de Santa Catarina ([Unoesc](www.unoesc.edu.br)).
+ Customizações do abnTeX2 (https://github.com/abntex/abntex2) para o Curso de Engenharia de Computação da Universidade do Oeste de Santa Catarina ([Unoesc](www.unoesc.edu.br)).
 
  This work may be distributed and/or modified under the
  conditions of the LaTeX Project Public License, either version 1.3
@@ -12,7 +12,7 @@
  
   The Current Maintainer of this work is Jonas Alessi, alessi.jonas@gmail.com
 
- Further information about abnTeX2 are available on http://abntex2.googlecode.com/
+ Further information about abnTeX2 are available on https://github.com/abntex/abntex2
  
 # Manual LaTex Unoesc
 ----
