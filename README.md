@@ -37,8 +37,7 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
 **Fedora**
 
-    yum install texlive -y
-
+    sudo dnf install texlive-scheme-full
 
 2 - Caso você já possua os texlive instalado em versões anterioes é possível  atualizá-lo;
 
@@ -49,7 +48,7 @@ Este repositório contém o modelo e o manual para instalação e utilização d
          
 **Fedora**
 
-    sudo yum update -y
+    sudo dnf upgrade
 
 
 3 - Depois de possuir os pacotes principais instalados é necessária a instalação dos pacotes adicionais;
@@ -60,7 +59,7 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 
 **Fedora**
 
-    sudo yum install tex-babel-portuges texlive-lipsum texlive-lastpage
+    Não precisa.
 
 **Windows**
 
