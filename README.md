@@ -38,6 +38,7 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 **Fedora**
 
     sudo dnf install texlive-scheme-full
+    ou
     sudo yum install texlive -y
 
 2 - Caso você já possua os texlive instalado em versões anterioes é possível  atualizá-lo;
@@ -50,6 +51,8 @@ Este repositório contém o modelo e o manual para instalação e utilização d
 **Fedora**
 
     sudo dnf upgrade
+    ou
+    sudo yum upgrade
 
 
 3 - Depois de possuir os pacotes principais instalados é necessária a instalação dos pacotes adicionais;
